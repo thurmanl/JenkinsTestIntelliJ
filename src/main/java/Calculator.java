@@ -75,6 +75,6 @@ class Calculator {
      */
     String createUniqueID(String n){
         String uniqueID = UUID.randomUUID(). toString();
-        return n + uniqueID;
+        return n + uniqueID + "42";
     }
 }
