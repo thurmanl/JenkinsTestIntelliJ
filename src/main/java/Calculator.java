@@ -2,6 +2,8 @@ import java.util.UUID;
 
 class Calculator {
 
+    it should fail now! :)
+
     Calculator(){
 
     }
