@@ -1,9 +1,9 @@
-environment {
-        registry = "thurmanl/calculator_app"
-        registryCredential = 'dockerhub'
-        dockerImage=''
-}
 pipeline {
+    environment {
+            registry = "thurmanl/calculator_app"
+            registryCredential = 'dockerhub'
+            dockerImage=''
+    }
     agent any
     tools {
         maven 'apache maven 3.6.3'
