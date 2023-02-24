@@ -1,15 +1,16 @@
+import java.io.Console;
 import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args){
     Calculator calc = new Calculator();
-    Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+    Console console = System.console();
     System.out.println("Welcome to the calculator");
-    System.out.println("Enter a command: [add, sub, mult, div, fib, bin]");
+    System.out.println("Commands: [add, sub, mult, div, fib, bin]");
 
     String command = "";
     while(!command.equals("quit")){
-      command = myObj.nextLine();
+      command = console.readLine("Enter command:");
       String[] parts = command.split(" ");
       System.out.println("you input: " + command);
       String result = "";
